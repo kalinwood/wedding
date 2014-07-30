@@ -55,14 +55,16 @@ p {
 
 .hero {
 	background-color: #ffffff;
-	height: 800px;
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .us {
 	max-width: 500px;
 	margin: auto;
 	left: 0; right: 0;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .break {
