@@ -116,8 +116,19 @@ section {
 footer {
 	background-color: #454a14;
 	padding: 20px;
-	color: #fffbef;
 	text-align: center;
+}
+
+.mysite {
+	text-decoration: none;
+	color: #fffbef;
+	 -webkit-transition: all 0.4s ease;
+ 	 -moz-transition: all 0.4s ease;
+ 	 -o-transition: all 0.4s ease;
+}
+
+.mysite:hover {
+	color: #c0713c;
 }
 
 @media screen and (max-width: 640px) {
