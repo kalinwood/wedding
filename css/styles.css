@@ -91,6 +91,14 @@ section {
 	height: 400px;
 }
 
+.us {
+	background-image: url(../images/us.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+}
+
 .btn {
   background-color: transparent;
   border: 2px solid #c0713c;
