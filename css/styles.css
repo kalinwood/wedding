@@ -51,7 +51,7 @@ h2 {
 
 p {
   font-family: 'Crimson Text', serif;
-  line-height: 2em;
+  line-height: 1.5em;
   color: #6f6f63;
 }
 
@@ -220,10 +220,15 @@ h2 a {
 
   .right {
     margin-top: 0;
+    padding-left: 60px;
   }
 
   .right-two {
-    padding: 40px 60px;
+    padding: 60px 60px;
+  }
+
+  .left {
+    padding-right: 60px;
   }
 
   .hero {
@@ -234,6 +239,14 @@ h2 a {
     margin: 100px 0;
     height: 400px;
   }
+
+  p {
+    line-height: 2em;
+  }
+
+  .unit p {
+  margin-left: 0px;
+}
 
 }
 
