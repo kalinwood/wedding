@@ -1,162 +1,239 @@
 /*-----------------------------------*\
-	$RESET
+  $RESET
 \*-----------------------------------*/
 
 * {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 /*-----------------------------------*\
-	$RESET
+  $RESET
 \*-----------------------------------*/
 
 html, body {
-	height: 100%;
-	font-family: 'Halant', serif;
-	font-size: 18px;
-	font-weight: 300;
-	background-color: #fef7ea;
-	width: 100%;
-	height: 100%;
-/*	background-image: url(../images/flower5.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: 400px;*/
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background: #f8f4e4;
 }
 
-.wrap {
-	background-image: url(../images/flower5.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: 300px;
-	width: 100%;
-	height: 100%;
-	position: fixed;
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+h2 {
+  padding-bottom: 20px;
+  color: #58766e;
+  font-weight: 500;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+p {
+  font-family: 'Crimson Text', serif;
+  line-height: 2em;
+  color: #6f6f63;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.note {
+  color: #a9a9a1;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.top {
-	padding: 20px;
-	width: 100%;
-	height: 100%;
-/*	background-image: url(../images/flower5.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: 400px;*/
-}
-
-.right {
-	max-width: 600px;
-	padding: 80px 30px;
-	text-align: left;
-	margin: 0 auto;
-	z-index: 2;
-}
-
-.info {
-	margin-top: 100px;
-	width: 100%;
-}
-
-h1 {
-	font-size: 1em;
-	color: #d4a2a3;
-	font-weight: 300;
-	letter-spacing: 1px;
-
-}
-
-.name {
-	font-size: 2em;
-	line-height: 1em;
-}
-
-.name-two {
-	font-size: 1.5em;
-	line-height: 1.5em;
-}
-
-.date {
-	color: #7e7a76;
-	letter-spacing: 2px;
-	-webkit-animation: fadein 4s;
-	-moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation: fadein 4s;
+.unit p {
+  margin-left: 10px;
 }
 
 a {
-	font-size: 1em;
-	text-decoration: none;
-	color: #7e7a76;
-	border-bottom: 1px solid #cac5bc;
-	line-height: 2.5em;
-	letter-spacing: 1px;
-		-webkit-animation: fadein 4s;
-	-moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation: fadein 4s;
+  color: #58766e;
+  border-bottom: 1px solid #58766e;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
 }
 
 a:hover {
-	color: #6f942a;
-	border-bottom: 1px solid #6f942a;
+  color: #393933;
+  border-bottom: 1px solid #393933;
 }
 
-.spacer {
-	margin-top: 30px;
+.hero {
+  width: 100%;
+  padding: 20px 30px;
 }
 
-@media (max-width: 1100px) {
 
-	.wrap {
-		background-image: url(../images/flower6.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-	}
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  color: #58766e;
+  padding: 0 20px;
+  line-height: 2em;
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  margin: 60px 0;
+}
+
+.bb {
+  background-image: url(../images/bb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.us {
+  background-image: url(../images/us.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.unit {
+  padding: 0 20px;
+  float: left;
+}
+
+.unit-two {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.right {
+  margin-top: 60px;
+}
+
+.right-two {
+  background-color: #f7edd0;
+  min-height: 300px;
+  padding: 40px 20px;
+  line-height: 1em;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+.sleeping {
+  background-image: url(../images/sbd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.fishtown {
+  background-image: url(../images/fishtown.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.tc {
+  background-image: url(../images/tc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.shorts {
+  background-image: url(../images/shorts.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.full-wrap {
+  width: 100%;
+}
+
+.float-right {
+  float: right;
+}
+
+.alt {
+  color: #a32529;
+}
+
+.break {
+  width: 100%;
+  padding: 100px 20px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  color: #a32529;
+}
+
+@media screen and (min-width:700px) {
+
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .unit {
+    width: 50%;
+  }
+
+  .unit-two {
+    width: 50%;
+    height: 400px;
+  }
+
+  .right {
+    margin-top: 0;
+  }
+
+  .right-two {
+    padding: 40px 60px;
+  }
+
+  .hero {
+    background-size: 80%;
+  }
+
+  .photo {
+    margin: 100px 0;
+    height: 400px;
+  }
 
 }
 
-@media (max-width: 600px) {
-
-	.name-two {
-		line-height: 2em;
-	}
-
-}
